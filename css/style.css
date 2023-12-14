@@ -47,4 +47,60 @@ table {
 	border-spacing: 0;
 }
 
-/* ---------- git status */
+/* ---------- */
+
+#header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 2rem;
+}
+
+.logo {
+	max-width: 15vw;
+	max-height: auto;
+	object-fit: contain;
+}
+
+#nav-menu {
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 2rem;
+}
+
+#main-grid {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: 
+		"first-row first-row first-row"
+		"first-column second-column third-column";
+	justify-items: center;
+	align-items: center;
+	gap: 2rem 2rem;
+	margin-bottom: 2rem;
+}
+
+#main-first-row {
+	grid-area: first-row;
+}
+
+#first-column {
+	grid-area: first-column;
+
+}
+#second-column {
+	grid-area: second-column;
+}
+
+#third-column {
+	grid-area: third-column;
+}
+
+.main-column {
+	text-align: center;
+}
+
+#footer {
+	display: flex;
+}
