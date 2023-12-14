@@ -49,6 +49,16 @@ table {
 
 /* ---------- */
 
+body {
+	background: linear-gradient(
+	165deg, 
+	#FAD4C0 0%, 
+	#FCE2D7 50%, 
+	#E97451 100%
+	);
+}
+
+
 #header {
 	display: flex;
 	flex-direction: column;
