@@ -50,6 +50,9 @@ table {
 }
 
 /* ---------- */
+* {
+	box-sizing: border-box;
+}
 
 body {
 	background: linear-gradient(
@@ -59,8 +62,8 @@ body {
 	#E97451 100%
 	);
 	font-family: "Open Sans", sans-serif;
+	min-height: 100vh;
 }
-
 
 #header {
 	display: flex;
@@ -103,19 +106,50 @@ body {
 
 #main-grid {
 	display: grid;
-	grid-template-rows: 1fr 1fr;
+	grid-template-rows: auto 1fr;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-areas: 
-		"first-row first-row first-row"
+		"banner banner banner"
 		"first-column second-column third-column";
-	justify-items: center;
-	align-items: center;
 	gap: 2rem 2rem;
 	margin-bottom: 2rem;
 }
 
-#main-first-row {
-	grid-area: first-row;
+#banner {
+	grid-area: banner;
+	position: relative;
+	width: 100%;
+}
+
+#banner-background {
+	width: 100%;
+	display: block;
+}
+
+#banner-text {
+	font-family: "Montserrat", sans-serif;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+	text-align: center;
+}
+
+#banner-text h1 {
+	margin-bottom: 0.5rem;
+	font-size: 2rem;
+}
+
+#banner-text p {
+	font-size: 1rem;
 }
 
 #first-column {
