@@ -209,3 +209,26 @@ body {
 #footer {
 	display: flex;
 }
+
+#footer img {
+	font-family: "Open Sans", sans-serif;
+	flex: 0 0 auto;
+	width: auto;
+	height: 100px;
+	margin-right: 1rem;
+}
+
+.footer-item {
+	flex: 1;
+	display: flex;
+	padding: 1rem;
+}
+
+.footer-item:first-child {
+	justify-content: flex-start;
+}
+
+.footer-item:last-child {
+	justify-content: flex-end;
+	align-self: center;
+}
