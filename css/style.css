@@ -55,14 +55,26 @@ table {
 }
 
 body {
-	background: linear-gradient(
+	/* background: linear-gradient(
 	165deg, 
 	#FAD4C0 0%, 
 	#FCE2D7 50%, 
 	#E97451 100%
-	);
+	); */
+	background: #EAE7DC;
+  	color: #FFFFFF; /* White text for contrast */
 	font-family: "Open Sans", sans-serif;
 	min-height: 100vh;
+}
+
+body, .card-content {
+	color: #505050;
+}
+
+#nav-bar a:hover,
+#nav-bar .active,
+.card-title {
+	color: #D98275;
 }
 
 #header {
@@ -82,7 +94,7 @@ body {
 	display: flex;
 	justify-content: space-evenly;
 	margin-bottom: 2rem;
-	background-color: rgba(255, 255, 255, 0.95);
+	background-color: rgba(249, 249, 249, 0.98);
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 	padding: 10px 20px;
 	/* position: fixed; */
@@ -158,6 +170,7 @@ body {
 	justify-content: space-between;
 	background: #fff;
 	border-radius: 10px;
+	border: 1px solid #DDD;
 	overflow: hidden;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 	transition: box-shadow 0.3s ease, transform 0.3s ease;
@@ -208,6 +221,7 @@ body {
 
 #footer {
 	display: flex;
+	border-top: 2px solid #D98275;
 }
 
 #footer img {
