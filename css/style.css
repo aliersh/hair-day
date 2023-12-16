@@ -55,14 +55,7 @@ table {
 }
 
 body {
-	/* background: linear-gradient(
-	165deg, 
-	#FAD4C0 0%, 
-	#FCE2D7 50%, 
-	#E97451 100%
-	); */
 	background: #EAE7DC;
-  	color: #FFFFFF; /* White text for contrast */
 	font-family: "Open Sans", sans-serif;
 	min-height: 100vh;
 }
